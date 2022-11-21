@@ -166,7 +166,7 @@ class MultiList:
         P = self.PTR
         if len(self) > 0:
             while (P != None):
-                respuesta = respuesta + str(P.data) + "->"
+                respuesta = respuesta + str(P.jugadores.nombre) + str(P.jugadores.carreras) + " -> "
                 P = P.next
             respuesta = respuesta + "None"
             return respuesta
@@ -184,11 +184,6 @@ class MultiList:
         except:
             return 0
 
-
-
-
-
-            
 
 class LinkedList:
     def __init__(self):
@@ -551,28 +546,28 @@ class LinkedList:
       else:
         print("Las listas no son semejantes.")
         
-      def __repr__(self):
+    def __repr__(self):
         respuesta = ""
         P = self.PTR
         if len(self) > 0:
-          while (P != None):
-            respuesta = respuesta + str(P.nombre) + "- " + str(P.carreras) + "->"
-            P = P.next
-          respuesta = respuesta + "None"
-          return respuesta
+            while (P != None):
+                respuesta = respuesta + str(P.nombre) + " - " + str(P.carreras) + " -> "
+                P = P.next
+            respuesta = respuesta + "None"
+            return respuesta
         else:
-          return "Lista vacía."
+            return "Lista vacía."
     
-      def __len__(self):
-          count = 0
-          node = self.PTR
-          try:
-              while node != None:
-                  count += 1
-                  node = node.next
-              return count
-          except:
-              return 0
+    def __len__(self):
+        count = 0
+        node = self.PTR
+        try:
+            while node != None:
+                count += 1
+                node = node.next
+            return count
+        except:
+            return 0
         
 
     def addMultiple(self, multiple):
