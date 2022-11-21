@@ -1,0 +1,8 @@
+La diferencia radica en que en la pila se elimina el
+ultimo elemento que fue agregado a la pila. Por ejemplo,
+si tenemos una pila de libros y queremos sacar uno, siempre
+deberemos sacar el último que fue apilado.
+En cambio en una cola, se elimina el primer elemento
+que haya sido agregado. Por ejemplo, en la fila de un banco
+atienden una a una a la primera persona que está en dicha
+fila.
