@@ -79,7 +79,4 @@ liga.AddMultipleToBranch([["Luis Ortega", 10],
                         ["Reynaldo Polanco", 1],
                         ["u00c1lvaro Galindo", 6]], 4)                    
 
-liga.AddToBranch(["None",	0], 5)
-
-
-#liga.RecorridoTotal()
+liga.RecorridoTotal()

@@ -51,7 +51,7 @@ class MultiList:
 
     def AddMultipleToBranch(self, lista, pos):
         for i in range(len(lista)):
-            self.AddToBranch(lista, pos)
+            self.AddToBranch(lista[i], pos)
 
     def Delete(self, target):
         P = self.PTR 
@@ -90,7 +90,7 @@ class MultiList:
         while P != None and c != pos:
             c += 1
             P = P.next
-        print(P.jugadores)
+        P.jugadores.Recorrido()
 
     def RecorridoTotal(self):
         for i in range(len(self)):
@@ -270,7 +270,7 @@ class LinkedList:
     def Recorrido(self):
         P = self.PTR
         while (P != None):
-            print(P.data, end="->")
+            print(P.nombre, "- " + str(P.carreras), end=" -> ")
             P = P.next
         print("None")
       
